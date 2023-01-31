@@ -25,7 +25,7 @@ This is a command-line tool for generating team card information. In the command
 
 ## links url
 
-[HTML-file](#http://127.0.0.1:5500/gen/index.html)
+1. [HTML-file](#http://127.0.0.1:5500/gen/index.html)
 
 ## Usage
 Clone the repo
