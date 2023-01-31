@@ -1,0 +1,18 @@
+.jumbotron {
+    background-color:teal;
+    border: black;
+   
+}
+
+.text-center {
+    color: white;
+}
+
+.card-body {
+    background-color:turquoise;
+    color: white;
+}
+
+.list-group {
+    color: black;
+}
