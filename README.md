@@ -6,10 +6,10 @@
 3. [Demo-video](#demo-video)
 4. [Link-URL](#url)
 5. [Usage](#usage)
-6. [Installation]
-7. [Tests] (#tests)
-8. [License] (#license)
-9. [Questions] (#questions)
+6. [Installation](installation)
+7. [Tests](#tests)
+8. [License](#license)
+9. [Questions](#questions)
 
 ## Description
 This is a command-line tool for generating team card information. In the command line, it uses the npm package Inquirer to allow the user to manually enter all of the team information. The user can continue to add as many engineers or interns as they need to their team profile before selecting "complete constructing my team" to exit the program. With a CSS style sheet, an HTML file is generated and saved in a distributable location.
@@ -20,12 +20,12 @@ This is a command-line tool for generating team card information. In the command
 
 ## Demo video
 
-[link] (#https://drive.google.com/file/d/1HXni-zE_ckjNFwsLubUZfFjd3Y1Vp3sv/view)
+[click-me](#https://drive.google.com/file/d/1HXni-zE_ckjNFwsLubUZfFjd3Y1Vp3sv/view)
 
 
 ## links url
 
-[link] (#http://127.0.0.1:5500/gen/index.html)
+[HTML-file](#http://127.0.0.1:5500/gen/index.html)
 
 ## Usage
 Clone the repo
@@ -49,8 +49,8 @@ node index
 ![image](https://user-images.githubusercontent.com/115763652/215899493-75c56653-a32e-4177-817d-35c9bf0d7c92.png)
 
 ## License
-MIT License
-https://img.shields.io/github/license/kaiyfa/Team_Profile_Creator
+
+![GitHub](https://img.shields.io/github/license/kaiyfa/Team_Profile_Creator)
 
 ## Questions
 For more information: Visit my GitHub: https://kaiyfa.github.io
