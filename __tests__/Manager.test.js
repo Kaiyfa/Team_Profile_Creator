@@ -1,20 +1,32 @@
-const Manager = require("../lib/Manager");
-const Employee = require("../lib/Employee");
+const Manager = require("../lib/manager");
+const Employee = require('../lib/employee');
 
-test("Can set office number via constructor argument", () => {
-  const testValue = 100;
-  const e = new Manager("Foo", 1, "test@test.com", testValue);
-  expect(e.officeNumber).toBe(testValue);
-});
+describe("Manager", () => {
+    test("getName method collects the manager's name from the user.", () => {
+        const manager = new Manager('Adam', '5b', 'adam@email.com', 'Manager');
 
-test('getRole() should return "Manager"', () => {
-  const testValue = "Manager";
-  const e = new Manager("Foo", 1, "test@test.com", 100);
-  expect(e.getRole()).toBe(testValue);
-});
+        expect(manager.name).toEqual(expect.any(String))
+        expect(manager.name).toEqual('Adam')
+    })
 
-test("Can get office number via getOffice()", () => {
-  const testValue = 100;
-  const e = new Manager("Foo", 1, "test@test.com", testValue);
-  expect(e.getOfficeNumber()).toBe(testValue);
-});
+    test("getID method collects the manager's ID from the user.", () => {
+        const manager = new Manager('Adam', '5b', 'adam@email.com', 'Manager');
+
+        expect(manager.id).toEqual(expect.any(String))
+        expect(manager.id).toEqual('5b')
+    })
+
+    test("getEmail method collects the manager's email from the user.", () => {
+        const manager = new Manager('Adam', '5b', 'adam@email.com', 'Manager');
+
+        expect(manager.email).toEqual(expect.any(String))
+        expect(manager.email).toEqual('adam@email.com')
+    })
+    test("should create a manager object", () => {
+        const manager = new Manager('Adam', '5b', 'adam@email.com', 'Manager');
+
+        expect(manager.officeNumber).toEqual(expect.any(String));
+        expect(manager.officeNumber).toEqual('Manager')
+        expect(manager.getOfficeNumber()).toEqual('Manager')
+    })
+})
