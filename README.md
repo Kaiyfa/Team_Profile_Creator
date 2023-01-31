@@ -1,15 +1,15 @@
 # Team_Profile_Creator
 
 ## Table of Contents
-[Description] (#description)
-[Application-image] (#application-image)
-[Demo-video] (#demo-video)
-[Link-URL] (#url)
-[Usage] (#usage)
-[Installation]
-[Tests] (#tests)
-[License] (#license)
-[Questions] (#questions)
+1.[Description] (#description)
+2.[Application-image] (#application-image)
+3.[Demo-video] (#demo-video)
+4.[Link-URL] (#url)
+5.[Usage] (#usage)
+6.[Installation]
+7.[Tests] (#tests)
+8.[License] (#license)
+9.[Questions] (#questions)
 
 ## Description
 This is a command-line tool for generating team card information. In the command line, it uses the npm package Inquirer to allow the user to manually enter all of the team information. The user can continue to add as many engineers or interns as they need to their team profile before selecting "complete constructing my team" to exit the program. With a CSS style sheet, an HTML file is generated and saved in a distributable location.
