@@ -1,8 +1,6 @@
 # Team_Profile_Creator
 
 ## Table of Contents
-[Headers](#headers)  
-[Emphasis](#emphasis)
 [Description] (#description)
 [Application-image] (#application-image)
 [Demo-video] (#demo-video)
