@@ -1,19 +1,32 @@
-const Engineer = require("../lib/Engineer");
+const Engineer = require("../lib/engineer");
+const Employee = require('../lib/employee');
 
-test("Can set GitHUb account via constructor", () => {
-  const testValue = "GitHubUser";
-  const e = new Engineer("Foo", 1, "test@test.com", testValue);
-  expect(e.github).toBe(testValue);
-});
+describe("Engineer", () => {
+    test("getName method collects the engineer's name from the user.", () => {
+        const engineer = new Engineer('Adam', '5b', 'adam@email.com', 'Eng');
 
-test("getRole() should return \"Engineer\"", () => {
-  const testValue = "Engineer";
-  const e = new Engineer("Foo", 1, "test@test.com", "GitHubUser");
-  expect(e.getRole()).toBe(testValue);
-});
+        expect(engineer.name).toEqual(expect.any(String))
+        expect(engineer.name).toEqual('Adam')
+    })
 
-test("Can get GitHub username via getGithub()", () => {
-  const testValue = "GitHubUser";
-  const e = new Engineer("Foo", 1, "test@test.com", testValue);
-  expect(e.getGithub()).toBe(testValue);
-});
+    test("getID method collects the engineer's ID from the user.", () => {
+        const engineer = new Engineer('Adam', '5b', 'adam@email.com', 'Eng');
+
+        expect(engineer.id).toEqual(expect.any(String))
+        expect(engineer.id).toEqual('5b')
+    })
+
+    test("getEmail method collects the engineer's email from the user.", () => {
+        const engineer = new Engineer('Adam', '5b', 'adam@email.com', 'Eng');
+
+        expect(engineer.email).toEqual(expect.any(String))
+        expect(engineer.email).toEqual('adam@email.com')
+    })
+    test("should create an engineer object", () => {
+        const engineer = new Engineer('Adam', '5b', 'adam@email.com', 'Eng');
+
+        expect(engineer.github).toEqual(expect.any(String));
+        expect(engineer.github).toEqual('Eng')
+        expect(engineer.getGitHub()).toEqual('Eng')
+    })
+})

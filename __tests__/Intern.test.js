@@ -1,19 +1,32 @@
-const Intern = require("../lib/Intern");
+const Intern = require("../lib/intern");
+const Employee = require('../lib/employee');
 
-test("Can set school via constructor", () => {
-  const testValue = "UCLA";
-  const e = new Intern("Foo", 1, "test@test.com", testValue);
-  expect(e.school).toBe(testValue);
-});
+describe("Intern", () => {
+    test("getName method collects the intern's name from the user.", () => {
+        const intern = new Intern('Adam', '5b', 'adama@email.com', 'intern');
 
-test("getRole() should return \"Intern\"", () => {
-  const testValue = "Intern";
-  const e = new Intern("Foo", 1, "test@test.com", "UCLA");
-  expect(e.getRole()).toBe(testValue);
-});
+        expect(intern.name).toEqual(expect.any(String))
+        expect(intern.name).toEqual('Adam')
+    })
 
-test("Can get school via getSchool()", () => {
-  const testValue = "UCLA";
-  const e = new Intern("Foo", 1, "test@test.com", testValue);
-  expect(e.getSchool()).toBe(testValue);
-});
+    test("getID method collects the intern's ID from the user.", () => {
+        const intern = new Intern('Adam', '5b', 'john@fakemail.', 'intern');
+
+        expect(intern.id).toEqual(expect.any(String))
+        expect(intern.id).toEqual('5b')
+    })
+
+    test("getEmail method collects the intern's email from the user.", () => {
+        const intern = new Intern('Adam', '5b', 'john@fakemail.', 'intern');
+
+        expect(intern.email).toEqual(expect.any(String))
+        expect(intern.email).toEqual('john@fakemail.')
+    })
+    test("should create an intern object", () => {
+        const intern = new Intern('Adam', '5b', 'john@fakemail.', 'intern');
+
+        expect(intern.school).toEqual(expect.any(String));
+        expect(intern.school).toEqual('intern')
+        expect(intern.getSchool()).toEqual('intern')
+    })
+})
